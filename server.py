@@ -139,4 +139,4 @@ def handle_user_leave(sid):
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 3000))
     print(f'Rip Chat Server running on port {port}')
-    socketio.run(app, host='0.0.0.0', port=port, debug=False)
+    socketio.run(app, host='0.0.0.0', port=port, debug=False, allow_unsafe_werkzeug=True)
