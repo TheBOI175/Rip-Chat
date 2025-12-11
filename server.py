@@ -172,6 +172,6 @@ def handle_user_leave(sid):
 from flask_socketio import request
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 80))
+    port = int(os.environ.get('PORT', 3000))
     print(f'Rip Chat Server running on port {port}')
-    socketio.run(app, host='0.0.0.0', port=port, debug=False, allow_unsafe_werkzeug=True)
+    socketio.run(app, host='0.0.0.0', port=port, debug=False)
