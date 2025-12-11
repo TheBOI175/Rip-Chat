@@ -1,5 +1,5 @@
-from flask import Flask
-from flask_socketio import SocketIO, emit, join_room, leave_room, request
+from flask import Flask, request
+from flask_socketio import SocketIO, emit, join_room, leave_room
 import random
 import os
 
